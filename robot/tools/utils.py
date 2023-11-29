@@ -37,19 +37,3 @@ def add_vectors(vec1: list[float, float], vec2: list[float, float]) -> list[floa
 
 def get_vector_length(vector: list[float, float]) -> float:
     return math.sqrt(vector[0]**2 + vector[1]**2)
-
-
-def normalize_vector(vector: list[float, float]) -> list[float, float]:
-    """Make sure the length of the vector is 1, while maintaining direction"""
-    
-    normalized_vector = [vector[0], vector[1]]
-
-
-    length = get_vector_length(vector)
-
-    if (length != 0):
-        # prevent division by zero
-        normalized_vector[0] /= length
-        normalized_vector[1] /= length
-
-    return normalized_vector

@@ -29,7 +29,7 @@ class SwerveDrive:
         self.rearRightModule.flush()
 
     def set_velocity_vector(self, new: list[float, float]):
-        self.velocity_vector = normalize_vector([new[0], new[1]])
+        self.velocity_vector = new
 
     # def set_rotation_speed(self, new: float):
     #     self.rotation_speed = limit(new)
