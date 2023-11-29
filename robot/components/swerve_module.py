@@ -63,7 +63,8 @@ class SwerveModule:
         tick_distance = self.degree_to_ticks(angle_distance)
 
         # set new direction
-        self.requested_ticks += tick_distance
+        if (tick_distance != 0):
+            self.requested_ticks = self.encoder_zero + tick_distance
 
     def set_speed(self, new_speed):
         self.requested_speed = new_speed
