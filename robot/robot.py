@@ -72,7 +72,6 @@ class SpartaBot(MagicRobot):
         self.rearRightModule: SwerveModule = SwerveModule(self.rearRightModule_driveMotor, self.rearRightModule_rotateMotor, self.rearRightModule_encoder)
 
 
-        print(f"{self.frontLeftModule.encoder_zero=} {self.frontRightModule.encoder_zero=} {self.rearLeftModule.encoder_zero=} {self.rearRightModule.encoder_zero=}")
 
     def disabledInit(self):
         pass
@@ -84,6 +83,8 @@ class SpartaBot(MagicRobot):
         self.drivetrain.flush()
 
         self.sd.putValue("Mode", "Teleop")
+
+        print(f"{self.frontLeftModule.encoder_zero=} {self.frontRightModule.encoder_zero=} {self.rearLeftModule.encoder_zero=} {self.rearRightModule.encoder_zero=}")
 
     def teleopPeriodic(self):
         '''NOTE: all components' execute() methods will be called automatically'''
