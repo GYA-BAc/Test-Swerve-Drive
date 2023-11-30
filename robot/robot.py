@@ -47,15 +47,15 @@ class SpartaBot(MagicRobot):
         self.drive_controller: wpilib.XboxController = wpilib.XboxController(0)
 
         # drivetrain motors
-        self.frontLeftModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(6)
-        self.frontRightModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(8)
-        self.rearLeftModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(3)
-        self.rearRightModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(1)
+        self.frontLeftModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(1)
+        self.frontRightModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(3)
+        self.rearLeftModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(7)
+        self.rearRightModule_driveMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(6)
 
-        self.frontLeftModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(5)
-        self.frontRightModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(7)
-        self.rearLeftModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(4)
-        self.rearRightModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(2)
+        self.frontLeftModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(2)
+        self.frontRightModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(4)
+        self.rearLeftModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(8)
+        self.rearRightModule_rotateMotor: ctre.WPI_TalonSRX = ctre.WPI_TalonSRX(5)
 
         # encoders
         self.frontLeftModule_encoder = self.frontLeftModule_rotateMotor
